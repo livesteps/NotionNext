@@ -7,5 +7,5 @@ module.exports = {
   generateRobotsTxt: true,
   sitemapSize: 7000
   // ...other options
-  // https://github.com/iamvishnusankar/next-sitemap#configuration-options
+  // https://github.com/livesteps/NotionNext/next-sitemap#configuration-options
 }
