@@ -1,5 +1,4 @@
 const BLOG = {
-  // Important page_id！！！Duplicate Template from  https://51think.notion.site/6a16d7fc702649b4aac2382259fb7391
   NOTION_PAGE_ID:process.env.NOTION_PAGE_ID || '61390d66f396486a97071dcbad4be5bb',
   PSEUDO_STATIC: process.env.NEXT_PUBLIC_PSEUDO_STATIC || false, //Pseudo-static paths, when enabled, all article URLs end with.html
   NEXT_REVALIDATE_SECOND: process.env.NEXT_PUBLIC_REVALIDATE_SECOND || 6, //Update Content Cache Interval in seconds; That is, each page has a purely static period of 5 seconds, during which no matter how many visits are made, the notion data will not be captured; Increasing this value will help save Vercel resources and increase access rates, but it will also delay article updates.
@@ -11,9 +10,9 @@ const BLOG = {
   APPEARANCE_DARK_TIME: process.env.NEXT_PUBLIC_APPEARANCE_DARK_TIME || [18, 6], // Nightmode-autoswitch hours
 
  //After version 3.14.1, the welcome message is configured here, separated by commas, to support multiple welcome message typing effects.
-  GREETING_WORDS: process.env.NEXT_PUBLIC_GREETING_WORDS || 'Hi，welcome to my thinking site, Hi，this is Johnny, Hi，this site is used to execute an effective thinking, Hi great thinking comes from small things🎉',
+  GREETING_WORDS: process.env.NEXT_PUBLIC_GREETING_WORDS || 'Welcome to the Hobbyist's blog',
 
-  CUSTOM_MENU: process.env.NEXT_PUBLIC_CUSTOM_MENU || true, // 支持Menu 类型，从3.12.0版本起，各主题将逐步支持灵活的二级菜单配置，替代了原来的Page类型，此配置是试验功能、默认关闭。
+  CUSTOM_MENU: process.env.NEXT_PUBLIC_CUSTOM_MENU || true, // Support Menu type, from version 3.12.0 onwards, each theme will gradually support flexible secondary menu configuration, replacing the original Page type, this configuration is an experimental function, disabled by default.
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || '', // Nickname
   BIO: process.env.NEXT_PUBLIC_BIO || 'Blogger and Hobbyist', //Short Bio
@@ -32,10 +31,10 @@ const BLOG = {
   NOTION_HOST: process.env.NEXT_PUBLIC_NOTION_HOST || 'https://www.notion.so', //Notion domain, you can choose to use your own domain name as a reverse proxy, if you don't know what a reverse proxy is, don't modify this item
 
   BLOG_FAVICON: process.env.NEXT_PUBLIC_FAVICON || '/favicon.ico', // blog favicon Default /public/favicon.ico，supports online images ex: https://img.imesong.com/favicon.png
-  // 网站字体
+  // Website fonts
   FONT_STYLE: process.env.NEXT_PUBLIC_FONT_STYLE || 'font-sans', // ['font-serif','font-sans'] There are two options, serif and sans-serif: Reference https://www.jianshu.com/p/55e410bd2115
   FONT_URL: [
-    // 字体CSS 例如 https://npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/style.css
+    // Font CSS for example https://npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/style.css
     'https://fonts.googleapis.com/css?family=Bitter&display=swap',
     'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap',
     'https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300&display=swap'
