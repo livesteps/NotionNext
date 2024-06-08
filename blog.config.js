@@ -10,7 +10,7 @@ const BLOG = {
   APPEARANCE_DARK_TIME: process.env.NEXT_PUBLIC_APPEARANCE_DARK_TIME || [18, 6], // Nightmode-autoswitch hours
 
  //After version 3.14.1, the welcome message is configured here, separated by commas, to support multiple welcome message typing effects.
-  GREETING_WORDS: process.env.NEXT_PUBLIC_GREETING_WORDS || 'Welcome to the Hobbyist's blog',
+  GREETING_WORDS: process.env.NEXT_PUBLIC_GREETING_WORDS || 'Welcome to the Hobbyists blog',
 
   CUSTOM_MENU: process.env.NEXT_PUBLIC_CUSTOM_MENU || true, // Support Menu type, from version 3.12.0 onwards, each theme will gradually support flexible secondary menu configuration, replacing the original Page type, this configuration is an experimental function, disabled by default.
 
